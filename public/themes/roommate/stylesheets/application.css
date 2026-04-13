@@ -1,0 +1,171 @@
+@import "../../stylesheets/application.css";
+
+/* ====== COLOR SYSTEM ====== */
+
+:root {
+  --rm-bg-dark: #0b0b0c;
+  --rm-bg-card: #ffffff;
+  --rm-accent: #f5b400;
+  --rm-accent-dark: #e0a500;
+  --rm-text: #111827;
+  --rm-muted: #6b7280;
+  --rm-border: #e5e7eb;
+}
+
+/* ====== GLOBAL ====== */
+
+body {
+  background: #f5f6f8;
+  color: var(--rm-text);
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* ====== HEADER ====== */
+
+#header {
+  background: var(--rm-bg-dark);
+  color: white;
+  border-bottom: 4px solid var(--rm-accent);
+}
+
+#header h1 {
+  color: white;
+  font-weight: 700;
+}
+
+/* ====== TOP MENU ====== */
+
+#top-menu {
+  background: var(--rm-accent);
+  color: black;
+}
+
+#top-menu a {
+  color: black;
+  font-weight: 600;
+}
+
+#top-menu a:hover {
+  background: var(--rm-accent-dark);
+}
+
+/* ====== MAIN LAYOUT ====== */
+
+#main {
+  background: #f5f6f8;
+}
+
+#content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* ====== SIDEBAR ====== */
+
+#sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--rm-border);
+}
+
+/* ====== LINKS ====== */
+
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+/* ====== BUTTONS ====== */
+
+.button,
+input[type="submit"],
+input[type="button"] {
+  background: var(--rm-accent);
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+  background: var(--rm-accent-dark);
+}
+
+/* ====== TABLES ====== */
+
+table.list {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--rm-border);
+}
+
+table.list th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+/* ====== ISSUE STATUS COLORS ====== */
+
+.status-open {
+  background: #fff7cc;
+}
+
+.status-closed {
+  background: #e6f7ec;
+}
+
+/* ====== TABS ====== */
+
+.tabs ul li a {
+  border-radius: 8px 8px 0 0;
+  padding: 8px 14px;
+}
+
+.tabs ul li a.selected {
+  background: var(--rm-accent);
+  color: black;
+}
+
+/* ====== FORM FIELDS ====== */
+
+input[type="text"],
+textarea,
+select {
+  border-radius: 8px;
+  border: 1px solid var(--rm-border);
+  padding: 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--rm-accent);
+  outline: none;
+}
+
+/* ====== FLASH NOTICES ====== */
+
+.flash.notice {
+  background: #fff7cc;
+  border-left: 4px solid var(--rm-accent);
+}
+
+.flash.error {
+  background: #fde8e8;
+}
+
+/* ====== FOOTER ====== */
+
+#footer {
+  background: var(--rm-bg-dark);
+  color: #9ca3af;
+  border-top: 4px solid var(--rm-accent);
+}
